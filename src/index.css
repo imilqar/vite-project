@@ -1,0 +1,37 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+.preview, .editor-container{
+  height: 100vh;
+}
+
+
+.editor-container { 
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.5rem;
+  gap: 1rem;
+}
+
+.selected {
+  border: 1px solid white;
+}
+
+.header {
+  padding: 1rem 1.5rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
